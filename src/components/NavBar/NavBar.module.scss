@@ -1,72 +1,73 @@
 @import 'styles/colors';
 
 .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 8px 20px;
-	height: 60px;
-	background-color: $dark-purple-3;
-	color: white;
-	position: sticky;
-	top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  height: 60px;
+  background-color: $dark-purple-3;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .linkList {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
 .link {
-	display: block;
+  display: block;
 
-	* {
-		text-decoration: none;
-		color: inherit;
-	}
+  * {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .menu {
-	position: absolute;
-	right: 0;
-	left: 0;
-	background-color: $dark-purple-3;
-	color: white;
-	text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: $dark-purple-3;
+  color: white;
+  text-align: center;
 }
 
 .menuContainer {
-	display: none;
+  display: none;
 }
 
 .menuHidden {
-	display: none;
+  display: none;
 }
 
 .menuLinkList {
-	padding: 0;
+  padding: 0;
 
-	.link {
-		display: block;
-		padding: 12px 0;
-		&:not(:last-child) {
-			border-bottom: 1px solid $dark-purple-1;
-		}
-	}
+  .link {
+    display: block;
+    padding: 12px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $dark-purple-1;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.container {
-		height: 80px;
-	}
+  .container {
+    height: 80px;
+  }
 
-	.menuContainer {
-		display: block;
-	}
+  .menuContainer {
+    display: block;
+  }
 
-	.linkList {
-		display: none;
-	}
+  .linkList {
+    display: none;
+  }
 }
