@@ -1,21 +1,36 @@
 @import 'styles/colors';
 
 .container {
-	height: 100vh;
-	padding: 150px 20px 0 20px;
-	text-align: center;
+  height: 100vh;
+  padding: 150px 20px 0 20px;
+  text-align: center;
 
-	background: linear-gradient($dark-purple-3, $purple-1, $blue-1);
+  background: linear-gradient($dark-purple-3, $purple-1, $blue-1);
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .title {
-	font-size: 3rem;
-	font-weight: bold;
-	color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  min-width: 50%;
+}
+
+.workingImg {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-	.container {
-		padding-top: 50px;
-	}
+  .titleContainer {
+    padding-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
