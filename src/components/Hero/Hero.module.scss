@@ -28,9 +28,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .titleContainer {
+  .container {
     padding-top: 50px;
-    justify-content: center;
+  }
+  .titleContainer {
     flex-direction: column;
   }
 }
