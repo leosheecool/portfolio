@@ -3,14 +3,23 @@ import { useEffect } from 'react';
 import AppRoutes from 'AppRoutes';
 
 const App = () => {
-	useEffect(() => {
-		(async () => {
-			const locomotiveScroll = (await import('locomotive-scroll')).default;
-			const scroll = new locomotiveScroll();
-		})();
-	}, []);
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll({
+        lenisOptions: {
+          smoothWheel: true,
+        },
+      });
+      locomotiveScroll.start();
+    })();
+  }, []);
 
-	return <AppRoutes />;
+  return (
+    <div>
+      <AppRoutes />
+    </div>
+  );
 };
 
 export default App;
