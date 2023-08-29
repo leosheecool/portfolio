@@ -6,12 +6,12 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
-        <h1 data-scroll data-scroll-speed="0.5" className={styles.title}>
+        <h1 className={styles.title}>
           Seamless solutions,
           <br />
           Serenely crafted
         </h1>
-        <div data-scroll data-scroll-speed="0.01">
+        <div data-scroll data-scroll-speed="-0.2">
           <img
             src={codeTyping}
             alt="Code typing"
