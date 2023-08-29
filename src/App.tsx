@@ -6,11 +6,7 @@ const App = () => {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll({
-        lenisOptions: {
-          smoothWheel: true,
-        },
-      });
+      const locomotiveScroll = new LocomotiveScroll();
       locomotiveScroll.start();
     })();
   }, []);
