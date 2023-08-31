@@ -1,0 +1,52 @@
+@import 'styles/colors';
+
+.container {
+  min-height: 100vh;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.workingImg {
+  width: 400px;
+}
+
+.infoContainer {
+  opacity: 0;
+}
+
+.floatingInfoContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .infoContainer {
+    opacity: 1;
+  }
+
+  .floatingInfoContainer {
+    display: none;
+  }
+
+  .workingImg {
+    display: none;
+  }
+}

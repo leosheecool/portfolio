@@ -12,8 +12,7 @@
     "@types/react-dom": "^18.2.7",
     "classnames": "^2.3.2",
     "eslint-config-prettier": "^9.0.0",
-    "gsap": "^3.12.2",
-    "locomotive-scroll": "5.0.0-beta.8",
+    "gsap": "npm:@gsap/shockingly",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
@@ -47,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "@types/locomotive-scroll": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "eslint": "^8.48.0",

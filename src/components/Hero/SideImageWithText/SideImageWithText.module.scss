@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    height: calc(100vh - 76px);
+    padding-top: 20px;
+  }
+}

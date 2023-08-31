@@ -1,0 +1,87 @@
+Arguments: 
+  /home/leo/.nvm/versions/node/v19.5.0/bin/node /home/leo/.nvm/versions/node/v19.5.0/bin/yarn add gsap@npm:@gsap/shockingly
+
+PATH: 
+  /home/leo/.local/share/pnpm:/home/leo/.yarn/bin:/home/leo/.config/yarn/global/node_modules/.bin:/home/leo/.nvm/versions/node/v19.5.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/local/kind
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EEXIST: file already exists, mkdir '/home/leo/repo/serenitydev/portfolio/portfolio-sample/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint'
+
+npm manifest: 
+  {
+    "name": "portefolio-front",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.17.0",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^13.5.0",
+      "@types/jest": "^27.5.2",
+      "@types/node": "^16.18.46",
+      "@types/react": "^18.2.21",
+      "@types/react-dom": "^18.2.7",
+      "classnames": "^2.3.2",
+      "eslint-config-prettier": "^9.0.0",
+      "gsap": "^3.12.2",
+      "gsap-trial": "^3.12.2",
+      "locomotive-scroll": "^4.1.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-icons": "^4.10.1",
+      "react-router-dom": "^6.15.0",
+      "react-scripts": "5.0.1",
+      "typescript": "^4.9.5",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@types/locomotive-scroll": "^4.1.0",
+      "@typescript-eslint/eslint-plugin": "^6.4.1",
+      "@typescript-eslint/parser": "^6.4.1",
+      "eslint": "^8.48.0",
+      "eslint-plugin-prettier": "^5.0.0",
+      "eslint-plugin-react": "^7.33.2",
+      "eslint-plugin-sonarjs": "^0.21.0",
+      "react-css-modules": "^4.7.11",
+      "sass": "^1.66.1",
+      "stylelint-config-standard-scss": "^10.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
