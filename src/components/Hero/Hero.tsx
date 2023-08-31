@@ -36,11 +36,11 @@ const Hero = () => {
     {
       id: 2,
       text: (
-        <h1 className={styles.title} ref={title1Ref}>
+        <h2 className={styles.title} ref={title1Ref}>
           Code is good,
           <br />
           Clean code is better
-        </h1>
+        </h2>
       ),
       image: (
         <div className={styles.illustrationContainer}>
@@ -89,7 +89,8 @@ const Hero = () => {
             scrollTrigger: {
               pin: true,
               scrub: true,
-              end: '+=100px',
+              start: '+=150 top',
+              end: '+=300',
             },
           },
           {
@@ -97,7 +98,8 @@ const Hero = () => {
             scrollTrigger: {
               pin: true,
               scrub: true,
-              end: '+=100px',
+              start: '+=150 top',
+              end: '+=300',
             },
           }
         );
@@ -111,8 +113,8 @@ const Hero = () => {
 
           scrollTrigger: {
             scrub: true,
-            start: 'top top',
-            end: '+=150',
+            start: '+=150 top',
+            end: '+=300',
           },
         },
         {
@@ -122,8 +124,8 @@ const Hero = () => {
           opacity: 1,
           scrollTrigger: {
             scrub: true,
-            start: 'top top',
-            end: '+=150',
+            start: '+=150 top',
+            end: '+=300',
           },
         }
       );

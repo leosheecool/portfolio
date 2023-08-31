@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { Hero, NavBar } from 'components';
+import { AboutSection, Hero, NavBar } from 'components';
 import scrollDownIcon from 'assets/icons/scroll-down.svg';
 import styles from './Home.module.scss';
 import useScrollSmoother from 'hooks/useScrollSmoother';
@@ -13,8 +13,13 @@ const Home = () => {
       <div id={'smooth-wrapper'}>
         <div id={'smooth-content'}>
           <Hero />
+          <AboutSection />
         </div>
-        <div className={styles.arrowContainer}>
+        <div
+          className={cn(styles.arrowContainer, {
+            [styles.removed]: scrollerSmooth.scrollProgress > 0.05,
+          })}
+        >
           <div className={styles.arrowWrapper}>
             <img
               src={scrollDownIcon}

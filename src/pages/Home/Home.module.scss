@@ -24,6 +24,11 @@
 .hidden {
   opacity: 0;
 }
+
+.removed {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .arrow {
     display: none;
