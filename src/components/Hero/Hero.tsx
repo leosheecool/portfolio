@@ -91,9 +91,8 @@ const Hero = () => {
 
       ScrollTrigger.create({
         trigger: titleRefContainer.current,
-        end: '+=500px',
+        end: 'center top',
         start: 'top top',
-        pin: true,
         animation: timeline,
       });
     });
@@ -103,11 +102,11 @@ const Hero = () => {
     <div className={styles.container}>
       <div className={styles.titleContainer} ref={titleRefContainer}>
         <h1 className={styles.title} ref={titleRef}>
-          Seamless solutions,
+          Welcome to Serenity Dev,
           <br />
-          Serenely crafted
+          Seamless solutions, Serenely crafted
         </h1>
-        <div data-speed="-0.2">
+        <div data-speed="-0.2" className={styles.illustrationContainer}>
           <CodeTypingImg
             ref={codeTypingRef}
             className={cn(styles.workingImg, 'animated')}
@@ -120,7 +119,7 @@ const Hero = () => {
           <br />
           Serenely crafted
         </h1>
-        <div>
+        <div className={styles.illustrationContainer}>
           <CreationProcessImg
             ref={creationProcessRef}
             className={cn(styles.workingImg, 'animated')}

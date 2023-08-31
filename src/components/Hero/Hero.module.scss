@@ -22,11 +22,15 @@
   font-size: 3rem;
   font-weight: bold;
   color: white;
+  max-width: 50%;
 }
 
 .workingImg {
-  width: 100%;
   margin: 0 auto;
+}
+
+.illustrationContainer {
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
@@ -42,6 +46,13 @@
     &:first-child {
       height: 100vh;
       padding-top: 0;
+    }
+
+    .title {
+      max-width: unset;
+    }
+    .illustrationContainer {
+      width: 100%;
     }
   }
 }
