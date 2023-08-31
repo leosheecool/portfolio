@@ -1,18 +1,57 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { ReactComponent as CodeTypingImg } from 'assets/illustrations/code-typing-animate.svg';
-import { ReactComponent as CreationProcessImg } from 'assets/illustrations/creation-process-animate.svg';
-import styles from './Hero.module.scss';
+import cn from 'classnames';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import cn from 'classnames';
+import SideImageWithText from './SideImageWithText/SideImageWithText';
+import styles from './Hero.module.scss';
+import { ReactComponent as CodeTypingImg } from 'assets/illustrations/code-typing-animate.svg';
+import { ReactComponent as CreationProcessImg } from 'assets/illustrations/creation-process-animate.svg';
 
 const Hero = () => {
   const codeTypingRef = useRef<SVGSVGElement>(null);
   const creationProcessRef = useRef<SVGSVGElement>(null);
   const titleRef = useRef(null);
   const titleRefContainer = useRef(null);
-  const titleContainerRef = useRef(null);
   const title1Ref = useRef(null);
+
+  const elements = [
+    {
+      id: 1,
+      text: (
+        <h1 className={styles.title} ref={titleRef}>
+          Welcome to Serenity Dev,
+          <br />
+          Seamless solutions, Serenely crafted
+        </h1>
+      ),
+      image: (
+        <div className={styles.illustrationContainer}>
+          <CodeTypingImg
+            ref={codeTypingRef}
+            className={cn(styles.workingImg, 'animated')}
+          />
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      text: (
+        <h1 className={styles.title} ref={title1Ref}>
+          Code is good,
+          <br />
+          Clean code is better
+        </h1>
+      ),
+      image: (
+        <div className={styles.illustrationContainer}>
+          <CreationProcessImg
+            ref={creationProcessRef}
+            className={cn(styles.workingImg, 'animated')}
+          />
+        </div>
+      ),
+    },
+  ];
 
   useLayoutEffect(() => {
     const mm = gsap.matchMedia();
@@ -100,32 +139,14 @@ const Hero = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.titleContainer} ref={titleRefContainer}>
-        <h1 className={styles.title} ref={titleRef}>
-          Welcome to Serenity Dev,
-          <br />
-          Seamless solutions, Serenely crafted
-        </h1>
-        <div data-speed="-0.2" className={styles.illustrationContainer}>
-          <CodeTypingImg
-            ref={codeTypingRef}
-            className={cn(styles.workingImg, 'animated')}
-          />
-        </div>
-      </div>
-      <div className={styles.titleContainer} ref={titleContainerRef}>
-        <h1 className={styles.title} ref={title1Ref}>
-          Seamless solutions,
-          <br />
-          Serenely crafted
-        </h1>
-        <div className={styles.illustrationContainer}>
-          <CreationProcessImg
-            ref={creationProcessRef}
-            className={cn(styles.workingImg, 'animated')}
-          />
-        </div>
-      </div>
+      {elements.map((element) => (
+        <SideImageWithText
+          text={element.text}
+          image={element.image}
+          ref={titleRefContainer}
+          key={element.id}
+        />
+      ))}
     </div>
   );
 };

@@ -1,13 +1,29 @@
+import cn from 'classnames';
 import { Hero, NavBar } from 'components';
-import React from 'react';
+import scrollDownIcon from 'assets/icons/scroll-down.svg';
+import styles from './Home.module.scss';
+import useScrollSmoother from 'hooks/useScrollSmoother';
 
 const Home = () => {
-	return (
-		<div>
-			<NavBar />
-			<Hero />
-		</div>
-	);
+  const scrollerSmooth = useScrollSmoother();
+
+  return (
+    <div>
+      <NavBar />
+      <Hero />
+      <div className={styles.arrowContainer}>
+        <div className={styles.arrowWrapper}>
+          <img
+            src={scrollDownIcon}
+            alt="scroll down"
+            className={cn(styles.arrow, {
+              [styles.hidden]: scrollerSmooth.scrollProgress > 0,
+            })}
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

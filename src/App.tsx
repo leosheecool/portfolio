@@ -4,18 +4,13 @@ import AppRoutes from 'AppRoutes';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import useScrollSmoother from 'hooks/useScrollSmoother';
 
 const App = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-    // ScrollTrigger.normalizeScroll(true);
-    // let smoother = ScrollSmoother.create({
-    //   smooth: 2,
-    //   effects: true,
-    //   normalizeScroll: true,
-    // });
   }, []);
+  useScrollSmoother();
 
   return (
     <div id={'smooth-wrapper'}>

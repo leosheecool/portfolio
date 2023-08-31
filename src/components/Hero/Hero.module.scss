@@ -8,16 +8,6 @@
   background: linear-gradient($dark-purple-3, $purple-1, $blue-1);
 }
 
-.titleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-}
 .title {
   font-size: 3rem;
   font-weight: bold;
@@ -38,21 +28,11 @@
     height: unset;
     padding-top: 20px;
   }
-  .titleContainer {
-    display: block;
-    height: calc(100vh - 76px);
-    padding-top: 20px;
 
-    &:first-child {
-      height: 100vh;
-      padding-top: 0;
-    }
-
-    .title {
-      max-width: unset;
-    }
-    .illustrationContainer {
-      width: 100%;
-    }
+  .title {
+    max-width: unset;
+  }
+  .illustrationContainer {
+    width: 100%;
   }
 }

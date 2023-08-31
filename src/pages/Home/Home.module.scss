@@ -1,0 +1,31 @@
+.arrowContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.arrowWrapper {
+  position: relative;
+  height: 100%;
+}
+
+.arrow {
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 128px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
