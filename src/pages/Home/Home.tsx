@@ -10,16 +10,20 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-      <Hero />
-      <div className={styles.arrowContainer}>
-        <div className={styles.arrowWrapper}>
-          <img
-            src={scrollDownIcon}
-            alt="scroll down"
-            className={cn(styles.arrow, {
-              [styles.hidden]: scrollerSmooth.scrollProgress > 0,
-            })}
-          />
+      <div id={'smooth-wrapper'}>
+        <div id={'smooth-content'}>
+          <Hero />
+        </div>
+        <div className={styles.arrowContainer}>
+          <div className={styles.arrowWrapper}>
+            <img
+              src={scrollDownIcon}
+              alt="scroll down"
+              className={cn(styles.arrow, {
+                [styles.hidden]: scrollerSmooth.scrollProgress > 0,
+              })}
+            />
+          </div>
         </div>
       </div>
     </div>

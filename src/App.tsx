@@ -13,10 +13,8 @@ const App = () => {
   useScrollSmoother();
 
   return (
-    <div id={'smooth-wrapper'}>
-      <div id={'smooth-content'}>
-        <AppRoutes />
-      </div>
+    <div>
+      <AppRoutes />
     </div>
   );
 };
