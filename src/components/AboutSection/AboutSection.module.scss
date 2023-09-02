@@ -7,6 +7,7 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .workingImg {
@@ -17,13 +18,8 @@
   opacity: 0;
 }
 
-.floatingInfoContainer {
+.overlay {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
   top: 0;
   left: 0;
   right: 0;
@@ -42,7 +38,7 @@
     opacity: 1;
   }
 
-  .floatingInfoContainer {
+  .overlay {
     display: none;
   }
 

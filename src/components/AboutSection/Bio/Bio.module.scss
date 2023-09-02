@@ -2,6 +2,8 @@
 
 .container {
   text-align: center;
+  padding: 32px 24px;
+  z-index: 2;
 }
 
 .title {
@@ -17,7 +19,7 @@
 }
 
 .subtitle {
-  color: $blue-1;
+  // color: $blue-1;
   font-size: 2rem;
 }
 
