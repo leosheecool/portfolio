@@ -54,58 +54,57 @@ const Hero = () => {
   ];
 
   useLayoutEffect(() => {
-    const mm = gsap.matchMedia();
-    mm.add('screen and (min-width: 768px)', () => {
-      const timeline = gsap
-        .timeline()
-        .to(titleRef.current, {
-          opacity: 0,
-          scrollTrigger: {
-            pin: true,
-            scrub: true,
-            end: '+=100px',
-          },
-        })
-        .to(codeTypingRef.current, {
-          scale: 0.5,
-          xPercent: -50,
-          y: 150,
-          opacity: 0,
-          scrollTrigger: {
-            pin: true,
-            scrub: true,
-            start: 'top top',
-            end: '+=150',
-          },
-          onComplete: () => {
-            if (!codeTypingRef.current) return;
-            codeTypingRef.current.classList.add('animated');
-          },
-        })
-        .fromTo(
-          title1Ref.current,
-          {
+    const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
+      mm.add('screen and (min-width: 768px)', () => {
+        const timeline = gsap
+          .timeline()
+          .to(titleRef.current, {
             opacity: 0,
             scrollTrigger: {
               pin: true,
               scrub: true,
-              start: '+=150 top',
-              end: '+=300',
+              end: '+=100px',
             },
-          },
-          {
-            opacity: 1,
+          })
+          .to(codeTypingRef.current, {
+            scale: 0.5,
+            xPercent: -50,
+            y: 150,
+            opacity: 0,
             scrollTrigger: {
               pin: true,
               scrub: true,
-              start: '+=150 top',
-              end: '+=300',
+              start: 'top top',
+              end: '+=150',
             },
-          }
-        );
-      gsap.fromTo(
-        creationProcessRef.current,
-        {
+            onComplete: () => {
+              if (!codeTypingRef.current) return;
+              codeTypingRef.current.classList.add('animated');
+            },
+          })
+          .fromTo(
+            title1Ref.current,
+            {
+              opacity: 0,
+              scrollTrigger: {
+                pin: true,
+                scrub: true,
+                start: '+=150 top',
+                end: '+=300',
+              },
+            },
+            {
+              opacity: 1,
+              scrollTrigger: {
+                pin: true,
+                scrub: true,
+                start: '+=150 top',
+                end: '+=300',
+              },
+            }
+          );
+        gsap.from(creationProcessRef.current, {
           scale: 0.5,
           xPercent: 50,
           y: -150,
@@ -116,27 +115,17 @@ const Hero = () => {
             start: '+=150 top',
             end: '+=300',
           },
-        },
-        {
-          scale: 1,
-          xPercent: 0,
-          y: 0,
-          opacity: 1,
-          scrollTrigger: {
-            scrub: true,
-            start: '+=150 top',
-            end: '+=300',
-          },
-        }
-      );
+        });
 
-      ScrollTrigger.create({
-        trigger: titleRefContainer.current,
-        end: 'center top',
-        start: 'top top',
-        animation: timeline,
+        ScrollTrigger.create({
+          trigger: titleRefContainer.current,
+          end: 'center top',
+          start: 'top top',
+          animation: timeline,
+        });
       });
     });
+    return () => ctx.revert();
   }, []);
 
   return (

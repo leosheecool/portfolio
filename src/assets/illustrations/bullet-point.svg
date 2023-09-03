@@ -1,0 +1,24 @@
+<svg width="340" height="394" xmlns="http://www.w3.org/2000/svg" overflow="visible" id="bullet_point">
+ <defs>
+  <linearGradient id="svg_9" x1="0" y1="0" x2="1" y2="0">
+   <stop stop-color="#4e2c70" stop-opacity="0.99609" offset="0"/>
+   <stop stop-color="#3eabf4" stop-opacity="0.99609" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <path stroke="url(#svg_9)" id="the_line" fill="#0fffff" opacity="NaN" d="m12,0c26,16 131,17 134,57c3,40 -78,16 -68,57c10,41 49,3 63,45c14,42 -49,26 -47,63c2,37 34,18 47,49c13,31 -34,20 -40,67c-6,47 -25,35 -101,56" fill-opacity="0"/>
+  <ellipse visibility='hidden' id="ball_1" fill="#fff" stroke="#fff" cx="143.70167" cy="58.57592" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_2" fill="#fff" stroke="#fff" cx="143.70167" cy="58.57592" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_3" fill="#fff" stroke="#fff" cx="79.13218" cy="110.23152" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_4" fill="#fff" stroke="#fff" cx="141.71492" cy="167.18513" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_5" fill="#fff" stroke="#fff" cx="95.68846" cy="224.46986" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_6" fill="#fff" stroke="#fff" cx="140.39042" cy="280.4301" rx="10.09933" ry="10"/>
+  <ellipse visibility='hidden' id="ball_7" fill="#fff" stroke="#fff" cx="99.33084" cy="350.2976" rx="10.09933" ry="10"/>
+  <text class="text01" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_3" y="64.43156" x="192.43408" stroke-width="0" stroke="#fff" fill="#fff">Quality</text>
+  <text class="text02" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_10" y="116.40637" x="123.16456" stroke-width="0" stroke="#fff" fill="#fff">Agility</text>
+  <text class="text03" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_11" y="173.85221" x="213.04197" stroke-width="0" stroke="#fff" fill="#fff">Communication</text>
+  <text class="text04" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_12" y="230.08227" x="150.18555" stroke-width="0" stroke="#fff" fill="#fff">Trust</text>
+  <text class="text05" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_13" y="287.52811" x="200.30646" stroke-width="0" stroke="#fff" fill="#fff">Autonomy</text>
+  <text class="text06" transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="'Crimson Pro'" font-size="12" id="svg_14" y="357.7397" x="152.92107" stroke-width="0" stroke="#fff" fill="#fff">Education</text>
+ </g>
+</svg>
