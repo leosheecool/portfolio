@@ -97,20 +97,20 @@ const ValuesSection = () => {
 
   return (
     <div className={styles.container}>
-      <BulletPoint scale={3} />
-      <div>
-        <h2>The values I promote</h2>
-        <ul>
-          {VALUES_LIST.map((value) => (
-            <li className={styles.listItem} key={value.id}>
-              <div>
-                <h3>{value.title}</h3>
-                <div>{value.description}</div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <h2 className={styles.title}>The values I promote</h2>
+      <BulletPoint className={styles.illustration} />
+
+      <ul className={styles.list}>
+        {VALUES_LIST.map((value) => (
+          <li className={styles.listItem} key={value.id}>
+            <div>
+              <h3 className={styles.valueTitle}>{value.title}</h3>
+              <div className={styles.valueLine} />
+              <p className={styles.valueDescription}>{value.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
