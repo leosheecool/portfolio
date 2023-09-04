@@ -104,11 +104,9 @@ const ValuesSection = () => {
       <ul className={styles.list}>
         {VALUES_LIST.map((value) => (
           <li className={styles.listItem} key={value.id}>
-            <div>
-              <h3 className={utilsStyles.subtitle}>{value.title}</h3>
-              <div className={utilsStyles.separator} />
-              <p className={styles.valueDescription}>{value.description}</p>
-            </div>
+            <h3 className={utilsStyles.subtitle}>{value.title}</h3>
+            <div className={utilsStyles.separator} />
+            <p className={styles.valueDescription}>{value.description}</p>
           </li>
         ))}
       </ul>
