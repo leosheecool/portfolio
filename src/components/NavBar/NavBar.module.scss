@@ -56,10 +56,12 @@
   .link {
     display: block;
     padding: 12px 0;
-    &:not(:last-child) {
-      border-bottom: 1px solid $dark-purple-1;
-    }
   }
+}
+
+.separator {
+  width: auto !important;
+  margin: 0 24px !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,7 +1,22 @@
 import React, { useState } from 'react';
+import cn from 'classnames';
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.scss';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import styles from './NavBar.module.scss';
+import utilsStyles from 'styles/utils.module.scss';
+
+const menuItems = [
+  {
+    id: 1,
+    name: 'About',
+    path: '#',
+  },
+  {
+    id: 2,
+    name: 'Contact',
+    path: '#',
+  },
+];
 
 const NavBar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -11,14 +26,11 @@ const NavBar = () => {
       <nav className={styles.navbar}>
         <p className={styles.brandName}>SerenityDev</p>
         <ul className={styles.linkList}>
-          {/* <li>Home</li> */}
-          <li className={styles.link}>
-            <Link to="#">About</Link>
-          </li>
-          {/* <li>Projects</li> */}
-          <li className={styles.link}>
-            <Link to="#">Contact</Link>
-          </li>
+          {menuItems.map((item) => (
+            <li className={styles.link} key={item.id}>
+              <Link to={item.path}>{item.name}</Link>
+            </li>
+          ))}
         </ul>
         <div className={styles.menuContainer}>
           <div
@@ -29,12 +41,18 @@ const NavBar = () => {
           </div>
           <div className={menuIsOpen ? styles.menu : styles.menuHidden}>
             <ul className={styles.menuLinkList}>
-              <li className={styles.link}>
-                <Link to="#">About</Link>
-              </li>
-              <li className={styles.link}>
-                <Link to="#">Contact</Link>
-              </li>
+              {menuItems.map((item, index) => (
+                <>
+                  <li className={styles.link} key={item.id}>
+                    <Link to={item.path}>{item.name}</Link>
+                  </li>
+                  {index !== menuItems.length - 1 && (
+                    <div
+                      className={cn(utilsStyles.separator, styles.separator)}
+                    />
+                  )}
+                </>
+              ))}
             </ul>
           </div>
         </div>

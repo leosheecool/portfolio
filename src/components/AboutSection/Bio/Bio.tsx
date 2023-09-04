@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './Bio.module.scss';
+import utilsStyles from 'styles/utils.module.scss';
 
 const Bio = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>About me</h2>
+      <h2 className={utilsStyles.title}>About me</h2>
       <img
         src="https://avatars.githubusercontent.com/u/44951969?v=4"
         alt="profile"
         className={styles.image}
       />
-      <h3 className={styles.subtitle}>Léo</h3>
+      <h3 className={utilsStyles.subtitle}>Léo</h3>
       <p className={styles.text}>
         I am a full-stack web developer specialized in frontend with a passion
         for creating beautiful and functional websites.

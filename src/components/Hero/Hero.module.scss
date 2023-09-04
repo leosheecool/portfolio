@@ -10,13 +10,6 @@
   background: linear-gradient($dark-purple-3, $purple-1, $blue-1);
 }
 
-.title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  max-width: 50%;
-}
-
 .workingImg {
   margin: 0 auto;
 }
@@ -31,9 +24,6 @@
     padding-top: 24px;
   }
 
-  .title {
-    max-width: unset;
-  }
   .illustrationContainer {
     width: 100%;
   }

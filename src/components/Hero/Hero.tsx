@@ -3,9 +3,10 @@ import cn from 'classnames';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SideImageWithText from './SideImageWithText/SideImageWithText';
-import styles from './Hero.module.scss';
 import { ReactComponent as CodeTypingImg } from 'assets/illustrations/code-typing-animate.svg';
 import { ReactComponent as CreationProcessImg } from 'assets/illustrations/creation-process-animate.svg';
+import styles from './Hero.module.scss';
+import utilsStyles from 'styles/utils.module.scss';
 
 const Hero = () => {
   const codeTypingRef = useRef<SVGSVGElement>(null);
@@ -18,7 +19,7 @@ const Hero = () => {
     {
       id: 1,
       text: (
-        <h1 className={styles.title} ref={titleRef}>
+        <h1 className={utilsStyles.title} ref={titleRef}>
           Welcome to Serenity Dev,
           <br />
           Seamless solutions, Serenely crafted
@@ -36,7 +37,7 @@ const Hero = () => {
     {
       id: 2,
       text: (
-        <h2 className={styles.title} ref={title1Ref}>
+        <h2 className={utilsStyles.title} ref={title1Ref}>
           Code is good,
           <br />
           Clean code is better

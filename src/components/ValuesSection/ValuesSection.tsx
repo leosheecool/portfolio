@@ -1,9 +1,10 @@
 import React, { useLayoutEffect } from 'react';
-import styles from './ValuesSection.module.scss';
 import gsap from 'gsap';
 import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { ReactComponent as BulletPoint } from 'assets/illustrations/bullet-point.svg';
+import styles from './ValuesSection.module.scss';
+import utilsStyles from 'styles/utils.module.scss';
 
 const VALUES_LIST = [
   {
@@ -104,8 +105,8 @@ const ValuesSection = () => {
         {VALUES_LIST.map((value) => (
           <li className={styles.listItem} key={value.id}>
             <div>
-              <h3 className={styles.valueTitle}>{value.title}</h3>
-              <div className={styles.valueLine} />
+              <h3 className={utilsStyles.subtitle}>{value.title}</h3>
+              <div className={utilsStyles.separator} />
               <p className={styles.valueDescription}>{value.description}</p>
             </div>
           </li>
