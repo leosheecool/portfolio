@@ -37,14 +37,14 @@ const NavBar = () => {
           })}
         >
           {menuItems.map((item, index) => (
-            <>
-              <li className={styles.link} key={item.id}>
+            <div key={item.id}>
+              <li className={styles.link}>
                 <Link to={item.path}>{item.name}</Link>
               </li>
               {index !== menuItems.length - 1 && (
                 <div className={cn(utilsStyles.separator, styles.separator)} />
               )}
-            </>
+            </div>
           ))}
         </ul>
       </div>

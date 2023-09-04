@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { AboutSection, Hero, ValuesSection } from 'components';
+import { AboutSection, Hero, SkillSection, ValuesSection } from 'components';
 import scrollDownIcon from 'assets/icons/scroll-down.svg';
 import styles from './Home.module.scss';
 import useScrollSmoother from 'hooks/useScrollSmoother';
@@ -12,6 +12,7 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <ValuesSection />
+      <SkillSection />
       <div
         className={cn(styles.arrowContainer, {
           [styles.removed]: scrollerSmooth.scrollProgress > 0.05,
