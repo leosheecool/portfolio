@@ -22,42 +22,33 @@ const NavBar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
-      <nav className={styles.navbar}>
-        <p className={styles.brandName}>SerenityDev</p>
-        <ul className={styles.linkList}>
-          {menuItems.map((item) => (
-            <li className={styles.link} key={item.id}>
-              <Link to={item.path}>{item.name}</Link>
-            </li>
+    <nav className={styles.navbar}>
+      <p className={styles.brandName}>SerenityDev</p>
+      <div>
+        <div
+          className={styles.menuIcon}
+          onClick={() => setMenuIsOpen(!menuIsOpen)}
+        >
+          {menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </div>
+        <ul
+          className={cn(styles.linkList, {
+            [styles.menuHidden]: !menuIsOpen,
+          })}
+        >
+          {menuItems.map((item, index) => (
+            <>
+              <li className={styles.link} key={item.id}>
+                <Link to={item.path}>{item.name}</Link>
+              </li>
+              {index !== menuItems.length - 1 && (
+                <div className={cn(utilsStyles.separator, styles.separator)} />
+              )}
+            </>
           ))}
         </ul>
-        <div className={styles.menuContainer}>
-          <div
-            className={styles.menuIcon}
-            onClick={() => setMenuIsOpen(!menuIsOpen)}
-          >
-            {menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-          </div>
-          <div className={menuIsOpen ? styles.menu : styles.menuHidden}>
-            <ul className={styles.menuLinkList}>
-              {menuItems.map((item, index) => (
-                <>
-                  <li className={styles.link} key={item.id}>
-                    <Link to={item.path}>{item.name}</Link>
-                  </li>
-                  {index !== menuItems.length - 1 && (
-                    <div
-                      className={cn(utilsStyles.separator, styles.separator)}
-                    />
-                  )}
-                </>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
