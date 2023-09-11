@@ -1,45 +1,54 @@
 import React, { useState } from 'react';
+import cn from 'classnames';
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.scss';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import styles from './NavBar.module.scss';
+import utilsStyles from 'styles/utils.module.scss';
+
+const menuItems = [
+  {
+    id: 1,
+    name: 'About',
+    path: '#',
+  },
+  {
+    id: 2,
+    name: 'Contact',
+    path: '#',
+  },
+];
 
 const NavBar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
-      <nav className={styles.navbar}>
-        <p className={styles.brandName}>SerenityDev</p>
-        <ul className={styles.linkList}>
-          {/* <li>Home</li> */}
-          <li className={styles.link}>
-            <Link to="#">About</Link>
-          </li>
-          {/* <li>Projects</li> */}
-          <li className={styles.link}>
-            <Link to="#">Contact</Link>
-          </li>
-        </ul>
-        <div className={styles.menuContainer}>
-          <div
-            className={styles.menuIcon}
-            onClick={() => setMenuIsOpen(!menuIsOpen)}
-          >
-            {menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-          </div>
-          <div className={menuIsOpen ? styles.menu : styles.menuHidden}>
-            <ul className={styles.menuLinkList}>
-              <li className={styles.link}>
-                <Link to="#">About</Link>
-              </li>
-              <li className={styles.link}>
-                <Link to="#">Contact</Link>
-              </li>
-            </ul>
-          </div>
+    <nav className={styles.navbar}>
+      <p className={styles.brandName}>SerenityDev</p>
+      <div>
+        <div
+          className={styles.menuIcon}
+          onClick={() => setMenuIsOpen(!menuIsOpen)}
+        >
+          {menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
-      </nav>
-    </div>
+        <ul
+          className={cn(styles.linkList, {
+            [styles.menuHidden]: !menuIsOpen,
+          })}
+        >
+          {menuItems.map((item, index) => (
+            <div key={item.id}>
+              <li className={styles.link}>
+                <Link to={item.path}>{item.name}</Link>
+              </li>
+              {index !== menuItems.length - 1 && (
+                <div className={cn(utilsStyles.separator, styles.separator)} />
+              )}
+            </div>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 };
 

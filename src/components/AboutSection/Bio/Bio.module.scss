@@ -2,13 +2,8 @@
 
 .container {
   text-align: center;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  margin-top: 0;
+  padding: 32px 24px;
+  z-index: 2;
 }
 
 .image {
@@ -16,20 +11,16 @@
   height: 250px;
 }
 
-.subtitle {
-  color: $blue-1;
-  font-size: 2rem;
-}
-
 .text {
   color: white;
-  font-size: 1.5rem;
-  margin: 20px auto;
+  font-size: 1rem;
+  margin: 24px auto;
   max-width: 50%;
 }
 
 @media screen and (max-width: 768px) {
   .text {
     max-width: unset;
+    text-align: justify;
   }
 }

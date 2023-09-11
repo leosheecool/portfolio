@@ -1,18 +1,17 @@
 @import 'styles/colors';
 
-.container {
+.navbar {
   height: 60px;
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 999;
-  width: 100%;
-}
 
-.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
+  padding: 8px 24px;
   background-color: $dark-purple-3;
   color: white;
 }
@@ -26,11 +25,16 @@
 
 .link {
   display: block;
+  margin: 12px 0;
 
   * {
     text-decoration: none;
     color: inherit;
   }
+}
+
+.menuIcon {
+  display: none;
 }
 
 .menu {
@@ -46,25 +50,35 @@
   display: none;
 }
 
-.menuHidden {
-  display: none;
-}
-
 .menuLinkList {
   padding: 0;
 
   .link {
     display: block;
     padding: 12px 0;
-    &:not(:last-child) {
-      border-bottom: 1px solid $dark-purple-1;
-    }
   }
 }
 
+.separator {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    width: auto !important;
+    margin: 0 24px !important;
+  }
   .container {
     height: 80px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .menuHidden {
+    display: none !important;
   }
 
   .menuContainer {
@@ -72,6 +86,13 @@
   }
 
   .linkList {
-    display: none;
+    display: block;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: $dark-purple-3;
+    color: white;
+    text-align: center;
   }
 }
