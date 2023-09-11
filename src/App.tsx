@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import useScrollSmoother from 'hooks/useScrollSmoother';
+import { ToastProvider } from 'hooks/useToast';
 
 const App = () => {
   useLayoutEffect(() => {
@@ -12,7 +13,11 @@ const App = () => {
   }, []);
   useScrollSmoother();
 
-  return <AppRoutes />;
+  return (
+    <ToastProvider>
+      <AppRoutes />
+    </ToastProvider>
+  );
 };
 
 export default App;

@@ -1,3 +1,5 @@
+@import 'styles/colors';
+
 .title {
   font-size: 3rem;
   font-weight: 700;
@@ -21,4 +23,23 @@
   height: 1px;
   background-color: #ffffff;
   margin: 1rem 0;
+}
+
+.toast {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $purple-1;
+  color: white;
+  padding: 12px;
+  border-radius: 0.25rem;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+
+  &.toastDisplayed {
+    opacity: 1;
+  }
 }
