@@ -49,30 +49,28 @@ const ContactMeSection = () => {
       <h2 className={utilsStyles.title}>Contact me:</h2>
       <div className={styles.linksContainer}>
         {links.map((link) => (
-          <>
-            <Link
-              to={link.url}
-              target="_blank"
-              rel="external"
-              className={styles.link}
-              key={link.id}
-            >
-              <HiExternalLink className={styles.externalLinkIcon} />
-              {link.icon}
-              <div className={styles.descriptionContainer}>
-                <p className={styles.description}>{link.description}</p>
+          <Link
+            to={link.url}
+            target="_blank"
+            rel="external"
+            className={styles.link}
+            key={link.id}
+          >
+            <HiExternalLink className={styles.externalLinkIcon} />
+            {link.icon}
+            <div className={styles.descriptionContainer}>
+              <p className={styles.description}>{link.description}</p>
+            </div>
+            {link.url.includes('tel') && (
+              <div
+                className={styles.copyButton}
+                onClick={(e) => handleCopy(e, link.url.replace('tel:', ''))}
+              >
+                <span>{link.url.replace('tel:', '')}</span>
+                <MdOutlineContentCopy />
               </div>
-              {link.url.includes('tel') && (
-                <div
-                  className={styles.copyButton}
-                  onClick={(e) => handleCopy(e, link.url.replace('tel:', ''))}
-                >
-                  <span>{link.url.replace('tel:', '')}</span>
-                  <MdOutlineContentCopy />
-                </div>
-              )}
-            </Link>
-          </>
+            )}
+          </Link>
         ))}
       </div>
     </div>
