@@ -1,11 +1,25 @@
 @import 'styles/colors';
 
+.container {
+  padding: 24px;
+  text-align: center;
+}
+
 .skillsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
   text-align: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 50%;
+  padding: 24px 0;
+
+  > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
 }
 
 .skillContainer {
@@ -21,7 +35,7 @@
   align-items: center;
   border-radius: 50%;
   padding: 16px;
-  background: linear-gradient(180deg, $dark-purple-2 0%, $blue-4 100%);
+  background: $dark-purple-to-blue-gradient;
 }
 
 .icon {

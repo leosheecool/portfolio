@@ -1,6 +1,14 @@
 import { FaReact } from 'react-icons/fa';
-import { BiLogoTypescript, BiLogoPython } from 'react-icons/bi';
+import {
+  BiLogoTypescript,
+  BiLogoPython,
+  BiLogoFlask,
+  BiLogoCPlusPlus,
+  BiLogoDocker,
+  BiLogoNodejs,
+} from 'react-icons/bi';
 import { AiFillGithub } from 'react-icons/ai';
+import { HiOutlineTranslate } from 'react-icons/hi';
 import styles from './SkillSection.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
 
@@ -26,11 +34,36 @@ const SkillSection = () => {
       name: 'Python',
       icon: <BiLogoPython className={styles.icon} />,
     },
+    {
+      id: 5,
+      name: 'English',
+      icon: <HiOutlineTranslate className={styles.icon} />,
+    },
+    {
+      id: 6,
+      name: 'Flask',
+      icon: <BiLogoFlask className={styles.icon} />,
+    },
+    {
+      id: 7,
+      name: 'NodeJS',
+      icon: <BiLogoNodejs className={styles.icon} />,
+    },
+    {
+      id: 8,
+      name: 'C++',
+      icon: <BiLogoCPlusPlus className={styles.icon} />,
+    },
+    {
+      id: 9,
+      name: 'Docker',
+      icon: <BiLogoDocker className={styles.icon} />,
+    },
   ];
 
   return (
-    <div style={{ padding: 24, height: 'fit-content' }}>
-      <h2>My skills</h2>
+    <div className={styles.container}>
+      <h2 className={utilsStyles.title}>My skills</h2>
       <div className={styles.skillsContainer}>
         {Skills.map((skill) => (
           <div key={skill.id} className={styles.skillContainer}>

@@ -47,7 +47,7 @@ text,
 .listItem {
   border-radius: 16px;
   padding: 24px;
-  background: linear-gradient(180deg, #702b9e 0%, $blue-4 100%);
+  background: $light-purple-to-blue-gradient;
   box-shadow: -4px 10px 17px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
