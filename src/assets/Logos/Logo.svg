@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: CrimsonPro-Bold, 'Crimson Pro';
+        font-size: 72px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom_116);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_116" data-name="Dégradé sans nom 116" x1="50" y1=".5" x2="50" y2="99.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b2d42"/>
+      <stop offset=".11" stop-color="#4e2c70"/>
+      <stop offset=".22" stop-color="#702b9e"/>
+      <stop offset=".33" stop-color="#b429f9"/>
+      <stop offset=".44" stop-color="#9c43f8"/>
+      <stop offset=".56" stop-color="#855df7"/>
+      <stop offset=".67" stop-color="#6d77f6"/>
+      <stop offset=".78" stop-color="#5591f5"/>
+      <stop offset=".89" stop-color="#3eabf4"/>
+      <stop offset="1" stop-color="#26c5f3"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle class="cls-3" cx="50" cy="50" r="49.5"/>
+    <path class="cls-2" d="m50,1c27.02,0,49,21.98,49,49s-21.98,49-49,49S1,77.02,1,50,22.98,1,50,1m0-1C22.39,0,0,22.39,0,50s22.39,50,50,50,50-22.39,50-50S77.61,0,50,0h0Z"/>
+  </g>
+  <text class="cls-1" transform="translate(32 68.63)"><tspan x="0" y="0">S</tspan></text>
+</svg>
