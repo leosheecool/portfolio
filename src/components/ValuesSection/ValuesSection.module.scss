@@ -37,11 +37,11 @@ text,
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   padding: 24px 0;
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
 }
 
