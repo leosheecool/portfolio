@@ -1,0 +1,11 @@
+@import 'styles/colors';
+
+.container {
+  text-align: center;
+  background: $dark-purple-1;
+
+  p {
+    margin: 0;
+    padding: 8px;
+  }
+}
