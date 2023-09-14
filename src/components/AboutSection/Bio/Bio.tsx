@@ -1,4 +1,5 @@
 import React from 'react';
+import PP from 'assets/images/EZ7A9815.jpg';
 import styles from './Bio.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
 
@@ -6,11 +7,7 @@ const Bio = () => {
   return (
     <div className={styles.container}>
       <h2 className={utilsStyles.title}>About me</h2>
-      <img
-        src="https://avatars.githubusercontent.com/u/44951969?v=4"
-        alt="profile"
-        className={styles.image}
-      />
+      <img src={PP} alt="profile" className={styles.image} />
       <h3 className={utilsStyles.subtitle}>Léo</h3>
       <p className={styles.text}>
         I am a full-stack web developer specialized in frontend with a passion
