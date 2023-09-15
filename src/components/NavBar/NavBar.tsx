@@ -23,12 +23,12 @@ const NavBar = () => {
       path: '#',
     },
     {
-      id: 2,
+      id: 3,
       name: t('navbar.skills'),
       path: '#',
     },
     {
-      id: 2,
+      id: 4,
       name: t('navbar.contact'),
       path: '#',
     },
