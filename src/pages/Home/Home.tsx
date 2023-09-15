@@ -9,9 +9,12 @@ import {
 import scrollDownIcon from 'assets/icons/scroll-down.svg';
 import styles from './Home.module.scss';
 import useScrollSmoother from 'hooks/useScrollSmoother';
+import gsap from 'gsap';
+import { ScrollSmoother, ScrollTrigger } from 'gsap/all';
 
 const Home = () => {
   const scrollerSmooth = useScrollSmoother();
+  gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
   return (
     <div>

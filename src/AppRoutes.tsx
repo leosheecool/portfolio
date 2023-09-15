@@ -12,23 +12,23 @@ const AppRoutes = () => {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<></>}>
-        <NavBar />
-        <p
-          className={cn(utilsStyles.toast, {
-            [utilsStyles.toastDisplayed]: toast?.isDisplayed,
-          })}
-        >
-          {toast?.text}
-        </p>
-        <div id={'smooth-wrapper'}>
-          <div id={'smooth-content'}>
+      <NavBar />
+      <p
+        className={cn(utilsStyles.toast, {
+          [utilsStyles.toastDisplayed]: toast?.isDisplayed,
+        })}
+      >
+        {toast?.text}
+      </p>
+      <div id={'smooth-wrapper'}>
+        <div id={'smooth-content'}>
+          <Suspense fallback={<></>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
             </Routes>
-          </div>
+          </Suspense>
         </div>
-      </Suspense>
+      </div>
     </BrowserRouter>
   );
 };

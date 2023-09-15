@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import PP from 'assets/images/EZ7A9815.jpg';
+import PP from 'assets/images/EZ7A9815.webp';
 import styles from './Bio.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
 import stringToFormatedJSXOutput from 'hooks/stringToFormatedJSXOutput';
