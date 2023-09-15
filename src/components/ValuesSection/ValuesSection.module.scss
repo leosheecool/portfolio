@@ -36,8 +36,9 @@ text,
 
 .list {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 24px;
   padding: 24px 0;
   max-width: 50%;
@@ -46,6 +47,8 @@ text,
 
 .listItem {
   border-radius: 16px;
+  max-width: 270px;
+  width: 270px;
   padding: 24px;
   background: $light-purple-to-blue-gradient;
   box-shadow: -4px 10px 17px 5px rgba(0, 0, 0, 0.2);
@@ -82,10 +85,10 @@ text,
 @media screen and (max-width: 768px) {
   .list {
     max-width: 100%;
+    justify-content: center;
   }
 
   .illustration {
     max-width: 100%;
-    // display: none;
   }
 }

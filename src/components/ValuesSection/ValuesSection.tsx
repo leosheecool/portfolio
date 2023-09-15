@@ -12,53 +12,11 @@ import {
 } from 'react-icons/fa6';
 import styles from './ValuesSection.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
-
-const VALUES_LIST = [
-  {
-    id: 1,
-    icon: <QualityMedal className={styles.icon} />,
-    title: 'Quality',
-    description:
-      'At Serenity Dev, I embrace impeccable code, where every line we write embodies robustness, efficiency, and reliability.',
-  },
-  {
-    id: 2,
-    icon: <FaUserGear className={styles.icon} />,
-    title: 'Agility',
-    description:
-      'I believe that the best way to create value in IT projects is by being agile. We are always ready to adapt to the ever-changing needs of our clients and the market.',
-  },
-  {
-    id: 3,
-    icon: <BsFillMegaphoneFill className={styles.icon} />,
-    title: 'Communication',
-    description:
-      'Communication is the key to success. I am always ready to communicate with you and your team to ensure that we are on the same page.',
-  },
-  {
-    id: 4,
-    icon: <FaHandshakeSimple className={styles.icon} />,
-    title: 'Trust',
-    description:
-      'Trust is the foundation of every healthy relationship. I believe in building trust with my clients by being transparent and honest.',
-  },
-  {
-    id: 5,
-    icon: <BsPersonFillCheck className={styles.icon} />,
-    title: 'Autonomy',
-    description:
-      'Through autonomy, I liberate your time and mental space, allowing you to focus on enhancing and adding value to your project.',
-  },
-  {
-    id: 6,
-    icon: <FaGraduationCap className={styles.icon} />,
-    title: 'Education',
-    description:
-      'Education holds immense significance for me. I am consistently eager to learn and share my knowledge with you and/or your team.',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const ValuesSection = () => {
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin, MotionPathPlugin);
 
@@ -109,9 +67,48 @@ const ValuesSection = () => {
     return () => ctx.revert();
   }, []);
 
+  const VALUES_LIST = [
+    {
+      id: 1,
+      icon: <QualityMedal className={styles.icon} />,
+      title: t('myValues.quality.title'),
+      description: t('myValues.quality.description'),
+    },
+    {
+      id: 2,
+      icon: <FaUserGear className={styles.icon} />,
+      title: t('myValues.agility.title'),
+      description: t('myValues.agility.description'),
+    },
+    {
+      id: 3,
+      icon: <BsFillMegaphoneFill className={styles.icon} />,
+      title: t('myValues.communication.title'),
+      description: t('myValues.communication.description'),
+    },
+    {
+      id: 4,
+      icon: <FaHandshakeSimple className={styles.icon} />,
+      title: t('myValues.trust.title'),
+      description: t('myValues.trust.description'),
+    },
+    {
+      id: 5,
+      icon: <BsPersonFillCheck className={styles.icon} />,
+      title: t('myValues.autonomy.title'),
+      description: t('myValues.autonomy.description'),
+    },
+    {
+      id: 6,
+      icon: <FaGraduationCap className={styles.icon} />,
+      title: t('myValues.education.title'),
+      description: t('myValues.education.description'),
+    },
+  ];
+
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>The values I promote</h2>
+      <h2 className={styles.title}>{t('myValues.title')}</h2>
       <BulletPoint className={styles.illustration} />
 
       <ul className={styles.list}>

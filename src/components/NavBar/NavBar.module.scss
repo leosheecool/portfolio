@@ -37,6 +37,32 @@
   }
 }
 
+.languageSelectorContainer {
+  position: relative;
+  text-transform: uppercase;
+
+  .languageSelector {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .languageSelectorItem {
+    cursor: pointer;
+    padding: 12px 8px;
+    background-color: $dark-purple-3;
+    color: white;
+    margin: 0 auto;
+    width: max-content;
+  }
+}
+
+.verticalSeparator {
+  width: 1px;
+  height: 24px;
+  background-color: white;
+  margin: 0;
+}
+
 .menuIcon {
   display: none;
 }
@@ -75,6 +101,15 @@
   }
   .container {
     height: 80px;
+  }
+
+  .languageSelector {
+    position: unset !important;
+    display: block;
+  }
+
+  .verticalSeparator {
+    display: none;
   }
 
   .menuIcon {

@@ -7,8 +7,11 @@ import { ReactComponent as CodeTypingImg } from 'assets/illustrations/code-typin
 import { ReactComponent as CreationProcessImg } from 'assets/illustrations/creation-process-animate.svg';
 import styles from './Hero.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
+import { useTranslation } from 'react-i18next';
+import stringToFormatedJSXOutput from 'hooks/stringToFormatedJSXOutput';
 
 const Hero = () => {
+  const { t } = useTranslation();
   const codeTypingRef = useRef<SVGSVGElement>(null);
   const creationProcessRef = useRef<SVGSVGElement>(null);
   const titleRef = useRef(null);
@@ -20,9 +23,7 @@ const Hero = () => {
       id: 1,
       text: (
         <h1 className={utilsStyles.title} ref={titleRef}>
-          Welcome to Serenity Dev,
-          <br />
-          Seamless solutions, Serenely crafted
+          {stringToFormatedJSXOutput(t('hero.title1'))}
         </h1>
       ),
       image: (
@@ -38,9 +39,7 @@ const Hero = () => {
       id: 2,
       text: (
         <h2 className={utilsStyles.title} ref={title1Ref}>
-          Code is good,
-          <br />
-          Clean code is better
+          {stringToFormatedJSXOutput(t('hero.title2'))}
         </h2>
       ),
       image: (

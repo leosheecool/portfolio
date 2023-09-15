@@ -1,0 +1,57 @@
+{
+  "WIPBanner": "En cours de développement",
+  "navbar": {
+    "about": "A propos",
+    "values": "Valeurs",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Bienvenue à SerenityDev,\nDes solutions harmonieuses, réalisées sereinement",
+    "title2": "Coder c'est bien,\nMais coder proprement c'est mieux !"
+  },
+  "aboutMe": {
+    "title": "A propos de moi",
+    "text": "Je suis un développeur web full-stack, plus particulièrement spécialisé dans le développement frontend. Passioné par la création de sites web qui marient à la fois l'élégance visuelle et la fonctionnalité.\n\nMon parcours dans le développement web a débuté par une expérience de 6 mois au sein d'une start-up fintech. Par la suite, j'ai eu la chance de travailler pendant près de 3 ans au sein de SogetiLabs France, le département de recherche et développement de Sogeti France, où j'ai collaboré avec les experts du top 1 % en développement.\n\nAujourd'hui, je travaille en tant que freelance, et mon expérience chez SogetiLabs m'a habitué à évoluer dans un environnement international, en travaillant aux côtés de professionnels du monde entier.\n\nJe suis habitué à travailler avec les méthodologies de développement agile, notamment Scrum, et j'ai à cœur de produire un code propre tout en respectant les meilleures pratiques de l'industrie. Mon objectif est de fournir des solutions web efficaces qui non seulement répondent à vos attentes, mais les surpassent.\n\nN'hésitez pas à me contacter pour discuter de la manière dont mon expertise peut contribuer à vos projets et objectifs.\n\n"
+  },
+  "myValues": {
+    "title": "Les valeurs que je promeus",
+    "quality": {
+      "title": "Qualité",
+      "description": "Chez Serenity Dev, je prône le code le plus irréprochable possible, où chaque ligne que j'écris incarne la robustesse, l'efficacité et la fiabilité."
+    },
+    "agility": {
+      "title": "Agilité",
+      "description": "J'ai la conviction que la meilleure façon de créer de la valeur dans un projet IT se fait via l'agilité. Cela permet d'être en permanence prêt pour s'adapter aux changements de besoins du client et du marché."
+    },
+    "communication": {
+      "title": "Communication",
+      "description": "La communication est la clé de la réussite d'un projet. Je m'assure de toujours être à l'écoute de mes clients et de leur fournir des mises à jour régulières sur l'avancement du projet."
+    },
+    "trust": {
+      "title": "Confiance",
+      "description": "La confiance est la base de toute relation professionnelle saine. Je souhaite construire une confiance mutuelle avec mes clients en étant transparent et honnête."
+    },
+    "autonomy": {
+      "title": "Autonomie",
+      "description": "Grâce à mon autonomie, je vous libère du temps et de l'énergie pour vous concentrer sur les améliorations et l'addition de valeur pour votre produit."
+    },
+    "education": {
+      "title": "Apprentissage",
+      "description": "L'apprentissage et la transmission de connaissance occupe une place majeure dans ma vision du métier de développeur. Je suis constamment intéressé par l'apprentissage de nouvelles technologies et par le partage de mes connaissances avec vous et/ou votre équipe."
+    }
+  },
+  "mySkills": {
+    "title": "Mes compétences",
+    "english": "Anglais"
+  },
+  "contactMe": {
+    "title": "Contactez-moi",
+    "text": "Vous avez un projet en tête ? Vous souhaitez en savoir plus sur mes services ? N'hésitez pas à me contacter via les options ci-dessous, je vous répondrai dans les plus brefs délais.",
+    "linkedin": "Connectez-vous avec moi",
+    "email": "Envoyez-moi un email",
+    "malt": "Retrouvez-moi sur Malt",
+    "call": "Appelez-moi",
+    "toast": "Copié dans le presse-papier !"
+  }
+}
