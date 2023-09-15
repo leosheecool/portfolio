@@ -108,7 +108,7 @@ const ValuesSection = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>The values I promote</h2>
+      <h2 className={styles.title}>{t('myValues.title')}</h2>
       <BulletPoint className={styles.illustration} />
 
       <ul className={styles.list}>
