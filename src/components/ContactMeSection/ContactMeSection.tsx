@@ -6,33 +6,35 @@ import { ReactComponent as MaltIcon } from 'assets/icons/malt.svg';
 import styles from './ContactMeSection.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
 import { useToast } from 'hooks/useToast';
+import { useTranslation } from 'react-i18next';
 
 const ContactMeSection = () => {
   const toast = useToast();
+  const { t } = useTranslation();
 
   const links = [
     {
       id: 1,
       icon: <BsLinkedin className={styles.icon} />,
-      description: 'Connect with me',
+      description: t('contactMe.linkedin'),
       url: 'https://www.linkedin.com/in/l%C3%A9o-levacher/',
     },
     {
       id: 2,
       icon: <MdEmail className={styles.icon} />,
-      description: 'Send me an email',
+      description: t('contactMe.email'),
       url: `mailto:${process.env.REACT_APP_EMAIL}`,
     },
     {
       id: 3,
       icon: <MaltIcon className={styles.icon} />,
-      description: 'Malt',
+      description: t('contactMe.malt'),
       url: 'https://www.malt.fr/profile/leolevacher',
     },
     {
       id: 4,
       icon: <BsFillTelephoneFill className={styles.icon} />,
-      description: 'Call me',
+      description: t('contactMe.call'),
       url: `tel:${process.env.REACT_APP_PHONE}`,
     },
   ];
@@ -41,7 +43,7 @@ const ContactMeSection = () => {
     e.preventDefault();
     e.stopPropagation();
     navigator.clipboard.writeText(content);
-    toast?.displayToast('Copied to clipboard!');
+    toast?.displayToast(t('contactMe.toast'));
   };
 
   return (
