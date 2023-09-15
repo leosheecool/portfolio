@@ -11,8 +11,11 @@ import { AiFillGithub } from 'react-icons/ai';
 import { HiOutlineTranslate } from 'react-icons/hi';
 import styles from './SkillSection.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
+import { useTranslation } from 'react-i18next';
 
 const SkillSection = () => {
+  const { t } = useTranslation();
+
   const Skills = [
     {
       id: 1,
@@ -36,7 +39,7 @@ const SkillSection = () => {
     },
     {
       id: 5,
-      name: 'English',
+      name: t('mySkills.english'),
       icon: <HiOutlineTranslate className={styles.icon} />,
     },
     {
@@ -63,7 +66,7 @@ const SkillSection = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={utilsStyles.title}>My skills</h2>
+      <h2 className={utilsStyles.title}>{t('mySkills.title')}</h2>
       <div className={styles.skillsContainer}>
         {Skills.map((skill) => (
           <div key={skill.id} className={styles.skillContainer}>

@@ -1,0 +1,57 @@
+{
+  "WIPBanner": "Development in progress",
+  "navbar": {
+    "about": "About",
+    "values": "Values",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Welcome to SerenityDev,\nSeamless solutions, Serenely crafted",
+    "title2": "Code is good,\nClean code is better !"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "text": "I'm a dedicated full-stack web developer with a strong specialization in frontend development. My passion lies in crafting websites that seamlessly blend beauty and functionality.\n\nMy journey in web development includes a dynamic 6-month experience at a fintech startup, followed by an enriching tenure of nearly 3 years at SogetiLabs France, the prestigious R&D department of Sogeti France, where I had the privilege of collaborating with the top 1% of development experts.\n\nToday, I operate as a freelance developer, leveraging my international experience gained at SogetiLabs. This experience has equipped me to excel in diverse global environments, collaborating effectively with professionals from around the world.\n\nI'm well-versed in agile development methodologies, particularly Scrum, and I'm committed to producing clean code while adhering to industry best practices. My goal is to deliver exceptional web solutions that not only meet but exceed expectations.\n\nLet's connect to explore how my expertise can contribute to your projects and objectives."
+  },
+  "myValues": {
+    "title": "The values I promote",
+    "quality": {
+      "title": "Quality",
+      "description": "At Serenity Dev, I embrace impeccable code, where every line I write embodies robustness, efficiency, and reliability."
+    },
+    "agility": {
+      "title": "Agility",
+      "description": "I believe that the best way to create value in IT projects is by being agile. I am always ready to adapt to the ever-changing needs of my clients and the market."
+    },
+    "communication": {
+      "title": "Communication",
+      "description": "Communication is the key to success. I am always ready to communicate with you and your team to ensure that we are on the same page."
+    },
+    "trust": {
+      "title": "Trust",
+      "description": "Trust is the foundation of every healthy relationship. I believe in building trust with my clients by being transparent and honest."
+    },
+    "autonomy": {
+      "title": "Autonomy",
+      "description": "Through autonomy, I liberate your time and mental space, allowing you to focus on enhancing and adding value to your project."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Education holds immense significance for me. I am consistently eager to learn and share my knowledge with you and/or your team."
+    }
+  },
+  "mySkills": {
+    "title": "My skills",
+    "english": "English"
+  },
+  "contactMe": {
+    "title": "Contact me",
+    "text": "You have a project in your mind ? You want to know more about my services ? Do not hesitate to contact me with through the different options bellow. I will answer you as quickly as possible.",
+    "linkedin": "Connect with me",
+    "email": "Send me an email",
+    "malt": "See my profile on Malt",
+    "call": "Call me",
+    "toast": "Copied to clipboard !"
+  }
+}
