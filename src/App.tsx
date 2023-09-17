@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useLayoutEffect } from 'react';
 import AppRoutes from 'AppRoutes';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
@@ -8,9 +7,7 @@ import useScrollSmoother from 'hooks/useScrollSmoother';
 import { ToastProvider } from 'hooks/useToast';
 
 const App = () => {
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-  }, []);
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   useScrollSmoother();
 
   return (
