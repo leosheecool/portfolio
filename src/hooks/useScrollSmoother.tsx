@@ -6,7 +6,7 @@ const useScrollSmoother = () => {
   const [scrollerSmooth, setScrollerSmooth] = React.useState<ScrollSmoother>();
   const [scrollProgress, setScrollProgress] = React.useState<number>(0);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     ScrollTrigger.normalizeScroll(true);
     setScrollerSmooth(
       ScrollSmoother.create({
