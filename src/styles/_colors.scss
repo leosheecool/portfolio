@@ -10,21 +10,4 @@ $purple-3: #b429f9;
 $dark-purple-1: #702b9e;
 $dark-purple-2: #4e2c70;
 $dark-purple-3: #2b2d42;
-
-$dark-purple-to-light-blue-gradient: linear-gradient(
-  $dark-purple-3,
-  $purple-1,
-  $blue-1
-);
-
-$dark-purple-to-blue-gradient: linear-gradient(
-  180deg,
-  $dark-purple-2 0%,
-  $blue-4 100%
-);
-
-$light-purple-to-blue-gradient: linear-gradient(
-  180deg,
-  $dark-purple-1 0%,
-  $blue-4 100%
-);
+$dark-purple-4: #222433;

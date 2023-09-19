@@ -9,6 +9,7 @@ import {
 import scrollDownIcon from 'assets/icons/scroll-down.svg';
 import styles from './Home.module.scss';
 import useScrollSmoother from 'hooks/useScrollSmoother';
+import Footer from 'components/Footer/Footer';
 
 const Home = () => {
   const scrollerSmooth = useScrollSmoother();
@@ -35,6 +36,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

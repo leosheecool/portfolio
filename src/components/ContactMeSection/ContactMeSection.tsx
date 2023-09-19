@@ -48,7 +48,8 @@ const ContactMeSection = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={utilsStyles.title}>Contact me:</h2>
+      <h2 className={utilsStyles.title}>{t('contactMe.title')}</h2>
+      <p>{t('contactMe.text')}</p>
       <div className={styles.linksContainer}>
         {links.map((link) => (
           <Link

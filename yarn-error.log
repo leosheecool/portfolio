@@ -1,5 +1,5 @@
 Arguments: 
-  /home/leo/.nvm/versions/node/v19.5.0/bin/node /home/leo/.nvm/versions/node/v19.5.0/bin/yarn test --testLocationInResults --json --useStderr --outputFile /tmp/jest_runner_portfolio_sample_1000.json --watch --no-coverage --reporters default --reporters /home/leo/.vscode/extensions/orta.vscode-jest-5.2.3/out/reporter.js --colors
+  /home/leo/.nvm/versions/node/v19.5.0/bin/node /home/leo/.nvm/versions/node/v19.5.0/bin/yarn test --listTests --json --watchAll=false
 
 PATH: 
   /home/leo/.cache/cloud-code/installer/google-cloud-sdk/bin:/home/leo/.local/share/pnpm:/home/leo/.yarn/bin:/home/leo/.config/yarn/global/node_modules/.bin:/home/leo/.nvm/versions/node/v19.5.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/local/kind:/home/leo/google-cloud-sdk/bin
