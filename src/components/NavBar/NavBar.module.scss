@@ -9,7 +9,7 @@
   z-index: 999;
 }
 
-.navbar {
+.navigation {
   height: 60px;
 
   display: flex;
@@ -41,18 +41,19 @@
   position: relative;
   text-transform: uppercase;
 
-  .languageSelector {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
   .languageSelectorItem {
     cursor: pointer;
     padding: 12px 8px;
-    background-color: $dark-purple-3;
     color: white;
     margin: 0 auto;
     width: max-content;
+  }
+
+  .languageSelector {
+    background-color: $dark-purple-3;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 
@@ -106,6 +107,7 @@
   .languageSelector {
     position: unset !important;
     display: block;
+    background-color: $dark-purple-4 !important;
   }
 
   .verticalSeparator {
