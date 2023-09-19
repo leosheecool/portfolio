@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
+  background: linear-gradient($dark-purple-3, $dark-purple-2);
 }
 
 #bullet_point {
@@ -37,11 +38,11 @@ text,
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   padding: 24px 0;
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -50,7 +51,7 @@ text,
   max-width: 270px;
   width: 270px;
   padding: 24px;
-  background: $light-purple-to-blue-gradient;
+  background: linear-gradient(180deg, $dark-purple-1 0%, $blue-4 100%);
   box-shadow: -4px 10px 17px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
 }

@@ -1,10 +1,14 @@
 {
   "WIPBanner": "En cours de développement",
-  "navbar": {
+  "navigation": {
+    "home": "Accueil",
     "about": "A propos",
     "values": "Valeurs",
     "skills": "Compétences",
-    "contact": "Contact"
+    "contact": "Contact",
+    "GTC": "CGV",
+    "terms": "mentions légales",
+    "privacy": "charte de données"
   },
   "hero": {
     "title1": "Bienvenue à SerenityDev,\nDes solutions harmonieuses, réalisées sereinement",

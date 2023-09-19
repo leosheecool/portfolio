@@ -1,7 +1,9 @@
 @import 'styles/colors';
 
 .container {
-  padding: 24px;
+  padding: 64px;
+  background: linear-gradient(180deg, $purple-2 0%, $blue-2 100%);
+  text-align: center;
 }
 
 .linksContainer {
@@ -11,12 +13,12 @@
   flex-wrap: wrap;
   gap: 24px;
   max-width: 50%;
-  margin: auto;
+  margin: 64px auto;
 }
 
 .link {
-  background: $dark-purple-to-blue-gradient;
-  border-radius: 0.25rem;
+  background: linear-gradient($blue-4, $dark-purple-2);
+  border-radius: 16px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 1.5rem;
   text-align: center;

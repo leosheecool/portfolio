@@ -16,22 +16,22 @@ const NavBar = () => {
   const menuItems = [
     {
       id: 1,
-      name: t('navbar.about'),
+      name: t('navigation.about'),
       path: '#',
     },
     {
       id: 2,
-      name: t('navbar.values'),
+      name: t('navigation.values'),
       path: '#',
     },
     {
       id: 3,
-      name: t('navbar.skills'),
+      name: t('navigation.skills'),
       path: '#',
     },
     {
       id: 4,
-      name: t('navbar.contact'),
+      name: t('navigation.contact'),
       path: '#',
     },
   ];
@@ -44,7 +44,7 @@ const NavBar = () => {
   return (
     <div className={styles.container}>
       <WIPBanner />
-      <nav className={styles.navbar}>
+      <nav className={styles.navigation}>
         <p className={styles.brandName}>SerenityDev</p>
         <div>
           <div
@@ -61,7 +61,6 @@ const NavBar = () => {
             <li className={cn(styles.link, styles.languageSelectorContainer)}>
               <p
                 onClick={() => setIsLanguageSelectorOpen((prev) => !prev)}
-                style={{ margin: 0 }}
                 className={styles.languageSelectorItem}
               >
                 {getAvailableLanguages().find((item) =>
