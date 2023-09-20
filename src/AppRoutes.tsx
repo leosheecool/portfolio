@@ -6,6 +6,7 @@ import cn from 'classnames';
 import utilsStyles from 'styles/utils.module.scss';
 
 const HomePage = lazy(() => import('pages/Home/Home'));
+const GTCPage = lazy(() => import('pages/GTC/GTC'));
 
 const AppRoutes = () => {
   const toast = useToast();
@@ -25,6 +26,7 @@ const AppRoutes = () => {
           <Suspense fallback={<></>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/GTC/" element={<GTCPage />} />
             </Routes>
           </Suspense>
         </div>
