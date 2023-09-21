@@ -38,7 +38,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className={styles.linkList}>
-          <Link to="/" className={styles.link}>
+          <Link to="/GTC" className={styles.link}>
             {t('navigation.GTC')}
           </Link>
           <Link to="/" className={styles.link}>

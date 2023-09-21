@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './GTC.module.scss';
 import utilsStyles from 'styles/utils.module.scss';
 import Footer from 'components/Footer/Footer';
+import useScrollSmoother from 'hooks/useScrollSmoother';
 
 const GTC = () => {
+  useScrollSmoother();
   return (
     <>
       <div className={styles.container}>
