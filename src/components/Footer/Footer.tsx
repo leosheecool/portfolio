@@ -16,13 +16,13 @@ const Footer = () => {
           <Link to="/" className={styles.link}>
             {t('navigation.home')}
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="/#about" className={styles.link}>
             {t('navigation.about')}
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="/#skills" className={styles.link}>
             {t('navigation.skills')}
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="/#contact" className={styles.link}>
             {t('navigation.contact')}
           </Link>
         </div>
@@ -38,14 +38,17 @@ const Footer = () => {
           </Link>
         </div>
         <div className={styles.linkList}>
-          <Link to="/" className={styles.link}>
+          <Link to="/GTC" className={styles.link}>
             {t('navigation.GTC')}
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="/Terms" className={styles.link}>
             {t('navigation.terms')}
           </Link>
           <Link to="/" className={styles.link}>
             {t('navigation.privacy')}
+          </Link>
+          <Link to="/CV" className={styles.link}>
+            {t('navigation.resume')}
           </Link>
         </div>
       </div>

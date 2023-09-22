@@ -65,7 +65,7 @@ const SkillSection = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="skills">
       <h2 className={utilsStyles.title}>{t('mySkills.title')}</h2>
       <div className={styles.skillsContainer}>
         {Skills.map((skill) => (

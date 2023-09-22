@@ -5,7 +5,7 @@ import Bio from './Bio/Bio';
 
 const AboutSection = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
       <div className={styles.overlay} />
       <TeachingImg data-speed="1.3" className={styles.workingImg} />
       <Bio />
