@@ -45,7 +45,9 @@ const NavBar = () => {
     <div className={styles.container}>
       <WIPBanner />
       <nav className={styles.navigation}>
-        <p className={styles.brandName}>SerenityDev</p>
+        <Link to="/" className={styles.brandName}>
+          SerenityDev
+        </Link>
         <div>
           <div
             className={styles.menuIcon}
