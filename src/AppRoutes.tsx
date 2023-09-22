@@ -7,6 +7,8 @@ import utilsStyles from 'styles/utils.module.scss';
 
 const HomePage = lazy(() => import('pages/Home/Home'));
 const GTCPage = lazy(() => import('pages/GTC/GTC'));
+const TermsPage = lazy(() => import('pages/Terms/Terms'));
+const CVPage = lazy(() => import('pages/CV/CV'));
 
 const AppRoutes = () => {
   const toast = useToast();
@@ -27,6 +29,8 @@ const AppRoutes = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/GTC/" element={<GTCPage />} />
+              <Route path="/Terms/" element={<TermsPage />} />
+              <Route path="/CV/" element={<CVPage />} />
             </Routes>
           </Suspense>
         </div>
