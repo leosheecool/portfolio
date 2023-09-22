@@ -107,7 +107,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="values">
       <h2 className={styles.title}>{t('myValues.title')}</h2>
       <BulletPoint className={styles.illustration} />
 

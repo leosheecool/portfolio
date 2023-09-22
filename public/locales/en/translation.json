@@ -7,8 +7,12 @@
     "skills": "Skills",
     "contact": "Contact",
     "GTC": "GTC",
-    "terms": "terms",
-    "privacy": "privacy"
+    "GTC_full": "General Terms and Conditions",
+    "terms": "Terms",
+    "terms_full": "Terms of use",
+    "privacy": "Pivacy",
+    "resume": "Resume",
+    "resume_full": "Resume"
   },
   "hero": {
     "title1": "Welcome to SerenityDev,\nSeamless solutions, Serenely crafted",

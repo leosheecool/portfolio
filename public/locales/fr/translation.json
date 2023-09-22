@@ -7,8 +7,12 @@
     "skills": "Compétences",
     "contact": "Contact",
     "GTC": "CGV",
-    "terms": "mentions légales",
-    "privacy": "charte de données"
+    "GTC_full": "Conditions Générales de Vente",
+    "terms": "Mentions légales",
+    "terms_full": "Mentions légales",
+    "privacy": "charte de données",
+    "resume": "CV",
+    "resume_full": "Curriculum vitæ"
   },
   "hero": {
     "title1": "Bienvenue à SerenityDev,\nDes solutions harmonieuses, réalisées sereinement",
